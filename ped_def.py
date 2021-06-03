@@ -1,3 +1,10 @@
+input_path = ''
+
+for _set in ['train', 'val', 'test']:
+    n_normal = len(os.listdir(input_path + _set + '/NORMAL'))
+    n_infect = len(os.listdir(input_path + _set + '/PNEUMONIA'))
+    print('Set: {}, normal images: {}, pneumonia images: {}'.format(_set, n_normal, n_infect))
+
 def process_data(img_dims, batch_size):
     # Data generation objects
     train_datagen = ImageDataGenerator(rescale=1./255, zoom_range=0.3, vertical_flip=True)
