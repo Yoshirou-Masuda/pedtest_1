@@ -4,7 +4,7 @@ import pandas as pd
 import random
 import cv2
 import matplotlib.pyplot as plt
-%matplotlib inline
+# %matplotlib inline
 
 import keras.backend as K
 from keras.models import Model, Sequential
