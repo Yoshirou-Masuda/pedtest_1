@@ -1,3 +1,7 @@
+import os
+import numpy as np
+
+
 input_path = ''
 
 for _set in ['train', 'val', 'test']:
