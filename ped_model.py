@@ -13,6 +13,10 @@ from keras.preprocessing.image import ImageDataGenerator
 from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, EarlyStopping
 import tensorflow as tf
 
+img_dims = 150
+epochs = 5000
+batch_size = 32
+
 inputs = Input(shape=(img_dims, img_dims, 3))
 
 # First conv block
